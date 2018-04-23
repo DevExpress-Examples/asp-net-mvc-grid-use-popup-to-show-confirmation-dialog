@@ -1,0 +1,52 @@
+<script type="text/javascript">
+    var visibleIndex;
+    function OnCustomButtonClick(s, e) {
+        if (e.buttonID = "deleteButton") {
+            visibleIndex = e.visibleIndex;
+            popup.Show();
+        }
+    }
+    function OnClickYes(s, e) {
+        GridView.DeleteRow(visibleIndex);
+        popup.Hide();
+    }
+    function OnClickNo(s, e) {
+        popup.Hide();
+    }
+</script>
+
+@Html.Action("GridViewPartial")
+
+@Html.DevExpress().PopupControl(settings =>
+{
+    settings.Name = "popup";
+    settings.ShowHeader = true;
+    settings.AllowDragging = true;
+    settings.AllowResize = true;
+    settings.PopupAction = PopupAction.None;
+    settings.PopupElementID = "GridView";
+    settings.PopupVerticalAlign = PopupVerticalAlign.Middle;
+    settings.PopupHorizontalAlign = PopupHorizontalAlign.Center;
+
+    settings.HeaderText = "Confirm Delete?";
+    
+    settings.SetContent(() =>
+    {
+
+        @Html.DevExpress().Button(buttonSettings =>
+        {
+            buttonSettings.Name = "ButtonYes";
+            buttonSettings.Text="Yes";
+            buttonSettings.UseSubmitBehavior = false;
+            buttonSettings.ClientSideEvents.Click = "OnClickYes";
+        }).Render();
+        @Html.DevExpress().Button(buttonSettings =>
+        {
+            buttonSettings.Name = "ButtonNo";
+            buttonSettings.Text="No";
+            buttonSettings.UseSubmitBehavior = false;
+            buttonSettings.ClientSideEvents.Click = "OnClickNo";
+        }).Render();
+
+    });
+}).GetHtml()

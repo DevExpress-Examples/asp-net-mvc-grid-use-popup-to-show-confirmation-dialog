@@ -1,0 +1,36 @@
+@{
+    var grid = Html.DevExpress().GridView(settings => {
+        settings.Name = "GridView";
+        settings.CallbackRouteValues = new { Controller = "Home", Action = "GridViewPartial" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "Home", Action = "DeleteRowPartial" };
+        
+        settings.CommandColumn.Visible = true;
+
+
+        GridViewCommandColumnCustomButton customButton = new GridViewCommandColumnCustomButton() { ID = "deleteButton", Text = "Delete" };
+        settings.CommandColumn.CustomButtons.Add(customButton);
+        settings.ClientSideEvents.CustomButtonClick = "function(s, e) { OnCustomButtonClick(s, e); }";
+     
+        settings.KeyFieldName = "ID";
+
+        settings.Columns.Add("C1");
+        settings.Columns.Add(column => {
+            column.FieldName = "C2";
+            column.ColumnType = MVCxGridViewColumnType.SpinEdit;
+        });
+        settings.Columns.Add("C3");
+        settings.Columns.Add(column => {
+            column.FieldName = "C4";
+            column.ColumnType = MVCxGridViewColumnType.CheckBox;
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "C5";
+            column.ColumnType = MVCxGridViewColumnType.DateEdit;
+        });
+    });
+    if(ViewData["EditError"] != null) {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()
