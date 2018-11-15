@@ -1,3 +1,14 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [FilterConfig.cs](./CS/GridViewBatchEdit/App_Start/FilterConfig.cs)
+* [RouteConfig.cs](./CS/GridViewBatchEdit/App_Start/RouteConfig.cs)
+* [WebApiConfig.cs](./CS/GridViewBatchEdit/App_Start/WebApiConfig.cs)
+* [HomeController.cs](./CS/GridViewBatchEdit/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/GridViewBatchEdit/Controllers/HomeController.vb))
+* [Global.asax](./CS/GridViewBatchEdit/Global.asax)
+* [Global.asax.cs](./CS/GridViewBatchEdit/Global.asax.cs)
+* [Model.cs](./CS/GridViewBatchEdit/Models/Model.cs) (VB: [Model.vb](./VB/GridViewBatchEdit/Models/Model.vb))
+<!-- default file list end -->
 # GridView - How to show a confirmation dialog using PopupControl
 
 
