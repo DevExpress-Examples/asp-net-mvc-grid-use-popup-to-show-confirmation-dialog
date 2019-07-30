@@ -11,7 +11,7 @@
 <!-- default file list end -->
 # GridView - How to show a confirmation dialog using PopupControl
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t116360)**
+**[[Run Online]](https://codecentral.devexpress.com/t116360/)**
 <!-- run online end -->
 
 
