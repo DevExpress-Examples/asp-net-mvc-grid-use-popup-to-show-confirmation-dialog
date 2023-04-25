@@ -46,6 +46,6 @@ function OnClickNo(s, e) {
 * [Index.cs](./CS/GridViewBatchEdit/Views/Home/Index.cshtml) (VB: [Index.vb](./VB/GridViewBatchEdit/Views/Home/Index.vbhtml))
 * [HomeController.cs](./CS/GridViewBatchEdit/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/GridViewBatchEdit/Controllers/HomeController.vb))
 
-## More examples
+## More Examples
 
 * [GridView for Web Forms - How to use ASPxPopupControl to show a confirmation dialog](https://github.com/DevExpress-Examples/asp-net-web-forms-gridview-confirmation-dialog-with-aspxpopupcontrol)
