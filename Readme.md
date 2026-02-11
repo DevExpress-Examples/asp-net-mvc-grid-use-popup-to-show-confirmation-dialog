@@ -53,7 +53,7 @@ function OnClickNo(s, e) {
 
 * [GridView for Web Forms - How to use ASPxPopupControl to show a confirmation dialog](https://github.com/DevExpress-Examples/asp-net-web-forms-gridview-confirmation-dialog-with-aspxpopupcontrol)
 <!-- feedback -->
-## Does This Example Address Your Development Requirements/Objectives?
+## Does this example address your development requirements/objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-grid-use-popup-to-show-confirmation-dialog&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-mvc-grid-use-popup-to-show-confirmation-dialog&~~~was_helpful=no)
 
